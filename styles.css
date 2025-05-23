@@ -1,0 +1,141 @@
+/* ================= Universal Styles ====================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: Arial, sans-serif;          /* made with CSS and pain (×﹏×) */
+  color: #b92c2c;
+  background-color: #00223D;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-height: 100vh;
+  font-family: sans-serif; 
+}
+
+/* ============================== Fixed Header (Left Sidebar) ================= */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100vh;
+  background-color: #001c33;
+  border-right: 1px solid #000000;
+  padding: 2rem 1rem;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05);
+    
+    display: flex;
+    flex-direction: column;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+header h2 {
+  font-size: 1rem;
+}
+
+header h4 {
+  padding-top: 50px;
+}
+
+.spacer {
+  flex-grow: 1;
+}
+
+/* ===================== Scrollable Content Area =========================== */
+main {
+  margin-left: 250px;
+  padding: 2rem;
+  width: calc(100% - 250px);
+  overflow-x: hidden;
+}
+
+/* ================================ Links ============================== */
+a {
+  display: inline-block;
+  margin: 0.5rem 1rem 1rem 0;
+  text-decoration: none;
+  color: #0066cc;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ======================== Articles =============================== */
+
+article {
+  margin-bottom: 3rem;
+}
+
+article p {
+  margin-bottom: 1rem;
+}
+
+/* ======================================= Media ================================ */
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 1rem;
+}
+
+/* ==================== exempt video pitch from above rule =============================== */ 
+iframe {
+    display: block;
+    margin-top: 1rem;
+    max-width: 100%;
+}
+
+/* ============================== Porjects Section ======================== */
+.project {
+  background-color: #001c33;
+  border: 1px solid #000000;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  margin-right: 20rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+} 
+
+/* ========================== Footer ============================ */
+footer {
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* ================================ Media queries ============================== */
+@media (max-width: 768px) {
+  header {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+  }
+
+  main {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
