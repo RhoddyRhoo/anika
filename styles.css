@@ -13,7 +13,7 @@ html, body {
 }
 
 ul {
-  list-style: none;
+  list-style: none;       /* to remove bullet point at bottom of first page */
 }
 
 body {
@@ -33,10 +33,10 @@ header {
   background-color: #001c33;
   border-right: 1px solid #000000;
   padding: 2rem 1rem;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05);
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05);      /* subtle shadow for visual seperatin */
     
     display: flex;
-    flex-direction: column;
+    flex-direction: column;      
 }
 
 header h1 {
@@ -58,7 +58,7 @@ header h4 {
 
 /* ===================== Scrollable Content Area =========================== */
 main {
-  margin-left: 250px;
+  margin-left: 250px;   /* so main content doesn't overlap with sidebar */
   padding: 2rem;
   width: calc(100% - 250px);
   overflow-x: hidden;
@@ -68,12 +68,12 @@ main {
 a {
   display: inline-block;
   margin: 0.5rem 1rem 1rem 0;
-  text-decoration: none;
+  text-decoration: none;    /* no underline because that's ugly */
   color: #0066cc;
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: underline;   /* underline when hovering so users know it's a link */
 }
 
 /* ======================== Articles =============================== */
@@ -81,7 +81,7 @@ a:hover {
 article {
   margin-bottom: 3rem;
 }
-
+/*                               just some spacing between articles and paragraphs */
 article p {
   margin-bottom: 1rem;
 }
@@ -90,7 +90,7 @@ article p {
 img, video {
   max-width: 100%;
   height: auto;
-  display: block;
+  display: block;         /* removes white space */
   margin-top: 1rem;
 }
 
@@ -107,7 +107,7 @@ iframe {
   border: 1px solid #000000;
   padding: 1rem;
   margin-bottom: 2rem;
-  margin-right: 20rem;
+  margin-right: 20rem;        /* gives room on the right for symmetry */
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   display: flex;
