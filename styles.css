@@ -8,7 +8,7 @@
 html, body {
   height: 100%;
   font-family: Arial, sans-serif;          /* made with CSS and pain (×﹏×) */
-  color: #b92c2c;
+  color: #ffcbcb;
   background-color: #00223D;
 }
 
@@ -123,19 +123,45 @@ footer {
   color: #666;
 }
 
-/* ================================ Media queries ============================== */
+/* ================================ Media Queries ============================== */
 @media (max-width: 768px) {
-  header {
-    position: relative;
+  nav {
+    display: none;
+  }
+  
+    header {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     height: auto;
-    border-right: none;
+    padding: 1rem;
+    background-color: #001c33;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     border-bottom: 1px solid #ccc;
   }
 
+  header h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+  }
+  
+  header h2 {
+    display: none;
+  }
+
   main {
-    margin-left: 0;
+    margin: 0 auto;
     width: 100%;
+    padding: 2rem 1rem;
+  }
+  
+  .project {
+    margin-right: 0; 
   }
 }
 
